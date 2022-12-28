@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+ 
+</head>
+<body>
+     
+    <div class="container">
+        <!-----------------------------phần trên------------------------------------------------>
+    <div class="main-section">
+        <div class="search-box"><i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố">
+        </div>
+       <div class="info-wrapper">
+            <p class="city-name">Phan Thiết</p>
+            <p class="weather-state">Mây Thưa</p>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+            <p class="temperature">26</p>
+       </div>
+       <h5 class="ny">Tết sau</h5>
+       <div class="count-down">
+        
+            <div class="time">
+                <h5 id="days">00</h5>
+                
+            </div>
+            <div class="time">
+                <h5 id="hours">00 </h5>
+               
+            </div>
+            <div class="time">
+                <h5 id="minutes">00 </h5>
+               
+            </div>
+            <div class="time">
+                <h5 id="seconds">00</h5>
+                
+            </div>
+       </div>
+    </div>
+        <!---------------------------phần trên-------------------------------------------------->
+        
+
+ <!---------------------------phần dưới-------------------------------------------------->
+        <div class="additional-section">
+            <div class="row">
+                
+                <div class="item">
+                    <div class="label">MT Mọc</div>
+                    
+                    <div class="value sunrise">6:16</div>
+                    
+                </div>
+                <div class="item">
+                    <div class="label">MT Lặn</div>
+                    <div class="value sunset">17:56</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ Ẩm</div>
+                    <div class="value"><span class="humidity">73</span> %</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió</div>
+                    <div class="value"><span class="wind-speed">5.54</span> km/h</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+     <!---------------------------phần dưới-------------------------------------------------->
+    <script src="./main.js"></script>
+    <script src="./moment.js"></script>
+</body>
+</html>

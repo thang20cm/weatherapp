@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    
+    background-color: #FBAB7E;
+    background-image:url('./images/—Pngtree—spring\ festival\ new\ year\ yellow_929390.jpg');
+   
+
+    
+background-repeat: no-repeat;
+   
+}
+.container{
+    color: white;
+    
+    width: 400px;
+    margin: 110px auto;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.main-section{
+    border-radius: 20px;
+    border-bottom:1px solid white ;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+    
+    
+
+
+    position: relative;
+    margin-bottom: -30px;
+}
+.search-box{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.search-icon{
+    margin-right: 5px;
+    position: absolute;
+    left:0;
+
+}
+#search-input{
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background: transparent;
+    height: 20px;
+    color: white;
+}
+#search-input::placeholder{
+    color:rgb(240, 237, 237);
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding-top:80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+
+}
+.city-name{
+    font-size: 20px;
+    margin-bottom:3px ;
+}
+.weather-state{
+    font-size: 13px;
+}
+.weather-icon{
+    width: 70px;
+    height: 70px;
+}
+.temperature{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+}
+.temperature::after{
+    content: "o";
+    position: absolute;
+    font-size: 30px;
+    
+}
+.additional-section{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 13px;
+    background: white;
+    position: relative;
+}
+.additional-section .row{
+    margin-bottom: 5px;
+    display: flex;
+    
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #FBAB7E;
+    
+    
+}
+.label{
+    font-weight: 700;
+}
+.info-wrapper{
+    margin-top: -30px;
+  
+}
+.count-down{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    margin-bottom:40px ;
+}
+.time{
+    padding-left: 5px;
+}
+.ny{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 400px){
+    .container{
+        width:300px;
+    }
+    #search-input{
+        margin-left: 40px;
+    }
+    html{
+        height:500px;
+    }
+}
