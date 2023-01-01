@@ -37,7 +37,7 @@ const seconds = document.getElementById("seconds");
 
 const currentYear = new Date().getFullYear();
 
-const newYearTime = new Date(`January 22 ${currentYear+1}`);
+const newYearTime = new Date(`January 23 ${currentYear+1}`);
 
 function countDown(){
     const currentTime = new Date();
