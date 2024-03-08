@@ -11,32 +11,33 @@
     "wdth" 100;
 }
 body{
-    
-   
-   
+    height: 100vh;
+   position: relative;
+   background: #121114;
 }
 .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: white;
-    
-    width: 400px;
-    margin: 110px auto;
+    width: 70%;
+    margin:  auto;
     border-radius: 20px;
-    font-size: 14px;
+    
     font-family: 'Open Sans', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .main-section{
     border-radius: 20px;
-    border-bottom:1px solid white ;
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    opacity:1;
+   
+  background: #19171a;
     
     
 
 
     position: relative;
-    margin-bottom: -30px;
+  
 }
 .search-box{
     width: 50%;
@@ -54,34 +55,24 @@ body{
     left:0;
 
 }
-#search-input{
-    border: 0;
-    outline: 0;
-    padding: 3px 3px 3px 20px;
-    background: transparent;
-    height: 20px;
-    color: white;
-}
-#search-input::placeholder{
-    color:rgb(240, 237, 237);
-}
+
 .info-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+
     padding-top:80px;
    
     padding-bottom: 25px;
 
 }
 .city-name{
-    font-size: 20px;
+    font-size: 2em;
     margin-bottom:3px ;
 }
 .weather-state{
-    font-size: 13px;
+    font-size: 1em;
 }
 .weather-icon{
     width: 70px;
@@ -100,7 +91,7 @@ body{
     
 }
 .additional-section{
-    border-radius: 20px;
+    border-radius:0px 0px 20px 20px;
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
@@ -142,16 +133,46 @@ body{
     display: flex;
     justify-content: center;
 }
-@media only screen and (max-width: 400px){
-    .container{
-        width:350px;
-    }
-    #search-input{
-        margin-left: 40px;
-    }
-   
+
+
+#search-test{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background: transparent;
+    height: 20px;
+    color: white;
+    margin-left: .5rem;
+    font-size: 1em;
 }
-@media only screen and (max-width: 350px){
-    .container{
-    width:300px;}
+#search-test::placeholder{
+    color:rgb(240, 237, 237);
 }
+#search-results{
+    overflow: hidden;
+    max-height: 300px;
+    color: black;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    background: white;
+    overflow-y: scroll;
+    border-radius: 0.2rem;
+
+    
+}
+#search-results p{
+    cursor: pointer;
+  
+}
+#search-results p:hover{
+    cursor: pointer;
+    background: #F7CE68;
+}
+
