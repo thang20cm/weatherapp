@@ -63,6 +63,8 @@ searchResultsContainer.addEventListener('click', async (e) => {
             // Hiển thị thông tin thời tiết của thành phố đã click
             cityName.innerHTML = data.name || DEFAULT_VALUE;
             weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
+          
+            
             weathericon.setAttribute('src',`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
             temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE ;
             sunrise.innerHTML = moment.unix(data.sys.sunrise).format('H:mm')||DEFAULT_VALUE;
